@@ -9,6 +9,13 @@ const app = express();
 app.use(cors());
 
 //API Routes
+app.get('/', (response) =>{
+  try{
+    response.send('welcome');
+  } catch(e){
+    response.status(500).send('status 500: Sorry!')
+  }
+})
 app.get('/location', (request, response)=>{
   console.log(request.query);
   try{
