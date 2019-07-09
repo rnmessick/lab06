@@ -1,6 +1,7 @@
 {
   "name": "lab06",
   "version": "1.0.0",
+
   "description": "**Author**: Fabian Brooks and Renee Messick\r **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)",
   "main": "server.js",
   "dependencies": {
@@ -11,6 +12,9 @@
     "nodemon": "^1.19.1"
   },
   "devDependencies": {},
+
+  "description": "",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
