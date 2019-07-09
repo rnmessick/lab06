@@ -13,7 +13,7 @@ app.use(cors());
 app.get('/location', (request, response)=>{
   console.log(request.query);
   try{
-    const locationData = searchToLatLng('Seattle');
+    const locationData = searchToLatLng(request.query.data);
     response.send(locationData)
   }catch(e){
     response.status(500).send('status 500: Sorry I am not working')
@@ -22,7 +22,7 @@ app.get('/location', (request, response)=>{
 app.get('/weather', (request, response)=>{
   console.log(request.query);
   try{
-    const weatherData = searchWeather();
+    const weatherData = searchWeather(request.query.data);
     response.send(weatherData)
   }catch(e){
     response.status(500).send('status 500: Sorry I am not working')
