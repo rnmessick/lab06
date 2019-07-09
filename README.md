@@ -43,4 +43,24 @@ Finish time: __9:40am__
 
 Actual time needed to complete: __40 min__
 
+Number and name of feature: ___#3 Weather__
+
+Estimate of time needed to complete: ___1 hr__
+
+Start time: __9:50am__
+
+Finish time: __11:40am__
+
+Actual time needed to complete: __70 min__
+
+Number and name of feature: ___#4 Errors__
+
+Estimate of time needed to complete: ___1 hr__
+
+Start time: __12:00am__
+
+Finish time: __1:00am__
+
+Actual time needed to complete: __1 hr__
+
 
