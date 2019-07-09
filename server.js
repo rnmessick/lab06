@@ -9,13 +9,7 @@ const app = express();
 app.use(cors());
 
 //API Routes
-app.get('/', (response) =>{
-  try{
-    response.send('welcome');
-  } catch(e){
-    response.status(500).send('status 500: Sorry!')
-  }
-})
+
 app.get('/location', (request, response)=>{
   console.log(request.query);
   try{
@@ -38,6 +32,7 @@ app.get('/weather', (request, response)=>{
 app.use('*',(request,response)=>{
   response.send('you got to the wrong place')
 })
+
 function Location(geoData){
   this.formatted_query = geoData.results[0].formatted_address;
   this.latitude = geoData.results[0].geometry.location.lat;
