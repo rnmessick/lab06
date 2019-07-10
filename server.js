@@ -1,5 +1,7 @@
 'use strict';
-//Load Evn
+// first run npm init from the terminal to create "package.json"
+// `npm install dotenv` installs the dotenv module into the node module folder
+// loads our environment from a secret .env file
 require('dotenv').config();
 
 const express = require('express');
@@ -33,23 +35,26 @@ app.use('*',(request,response)=>{
   response.send('you got to the wrong place')
 })
 
+//constructors
 function Location(geoData){
   this.formatted_query = geoData.results[0].formatted_address;
   this.latitude = geoData.results[0].geometry.location.lat;
   this.longitude = geoData.results[0].geometry.location.lng;
 }
 function Weather(weatherData){
+  let time = new Date(weatherData.time * 1000).toDateString();
   this.forecast = weatherData.summary;
-  let weatherTime = weatherData.time;
-  this.time = new Date(weatherTime)
+  this.time = time
 }
-function searchWeather(weatherQuery){
-  const weatherArr = [];
+
+//search for data
+function searchWeather(){
+  let weatherArr = [];
   const darkSkyData = require('./data/darksky.json');
   darkSkyData.daily.data.forEach(day =>{
     weatherArr.push(new Weather(day));
   })
-  weatherArr.search_query = weatherQuery;
+  console.log(weatherArr);
   return weatherArr;
 }
 
