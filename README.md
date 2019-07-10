@@ -20,6 +20,8 @@
 ## Credits and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
+*******************************************************************************************************
+Pair Programmed with Fabian Brooks 7/9/19
 
 Number and name of feature: ___#1 Repo Setup__
 
