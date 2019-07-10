@@ -16,11 +16,12 @@
 ## Change Log
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an examples:
 
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource.
 
 ## Credits and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
+*******************************************************************************************************
+Pair Programmed with Fabian Brooks 7/9/19
 
 Number and name of feature: ___#1 Repo Setup__
 
@@ -42,5 +43,25 @@ Start time: __9:00am__
 Finish time: __9:40am__
 
 Actual time needed to complete: __40 min__
+
+Number and name of feature: ___#3 Weather__
+
+Estimate of time needed to complete: ___1 hr__
+
+Start time: __9:50am__
+
+Finish time: __11:40am__
+
+Actual time needed to complete: __70 min__
+
+Number and name of feature: ___#4 Errors__
+
+Estimate of time needed to complete: ___1 hr__
+
+Start time: __12:00am__
+
+Finish time: __1:00am__
+
+Actual time needed to complete: __1 hr__
 
 
